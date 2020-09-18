@@ -1,0 +1,343 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 auto;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Arial", sans-serif;
+  color: black;
+  background-color: #f560e5;
+}
+.conteiner{
+	width: 80%;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.menu{	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	list-style: none;
+	padding-top: 40px;
+	font-size: 24px;
+	font-style:  italic;
+	font-weight: bold;	
+}
+
+.menu li{	
+	margin: 10px;
+	text-align: center;
+	line-height: 40px;
+}
+
+.menu li a{
+	color: black;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+    user-select: none;
+    padding: 5px;
+    outline: none;
+    border-radius: 3px / 100%;
+    background-image:
+    linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+    linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+    linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+    linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+    linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
+    linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+    background-repeat: no-repeat;
+    background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+    background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+    box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+}
+.menu li a:hover{
+	transition: .5s linear;
+    background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+}
+.menu li a.active{
+	top: 1px;
+}
+.logo{	
+	height: 420px;
+	width: 100%;
+	margin-top: 40px;
+	border-radius: 50px;
+	border: 2px solid black;
+	background: #fbd4f7 url(../img/Logo.png);
+	background-position: 50% 50%;
+    background-repeat: no-repeat;
+   -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+}
+.logo p{  
+    height: 420px;  
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Ekaterina Velikaya One";
+	text-decoration: underline;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 60px;
+	color: black;
+}
+.content{
+    display: flex;	
+	height: 500px;
+	width: 100%;
+	margin: 40px 0 40px 0;
+	border-radius: 50px;	 
+}
+.menunav{
+	width: 350px;
+	margin-right:  40px;
+	border-radius: 50px;
+	border: 2px solid black;
+	background: #fbd4f7;
+	overflow: auto;		
+	padding: 40px;
+	list-style-type: circle;	
+}
+.menunav  li a{
+	text-decoration: none;
+	color: black;	
+}
+.menunav li a:hover{
+	text-decoration: underline;
+}
+.info{
+    position: relative;	
+	width: 100%;
+	border-radius: 50px;
+	border: 2px solid black;
+	background: #fbd4f7;	
+}
+.infotext{	
+	position: relative;
+	top: 20px;
+	height: 80%;	
+	margin:  30px;
+	padding-right: 40px; 
+	padding-bottom: 10px; 
+	overflow: auto;	     
+}
+.infotext p{
+    width: 80%;	
+	text-align: justify;
+	text-indent: 30px;	
+	font-size: 16px;
+	line-height: 18px;	
+}
+/* стили для текста главной страницы*/
+.infotext li{
+	display: flex;
+	justify-content: space-around;
+}
+.infotext em{
+	font-style: italic;
+	font-size: 20px;
+}
+.infotext img{	
+	width: 20%;
+	height: 20%;
+	border: 2px solid;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);	
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.infotext img:hover{	
+	-webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -moz-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
+    -webkit-transition: all 2s ease-out;
+    -ms-transition: all 2s ease-out;	
+}
+
+
+/*стили для текста services*/
+.infotext .serviceinfo p{
+	width: 100%;
+	text-align: justify;
+	text-indent: 30px;	
+	font-size: 16px;
+	line-height: 18px;			
+}
+
+.infotext>div:not(:first-child){
+	position: absolute;
+	height: 100%;
+	top: 0;	
+	opacity: 0;
+	width: 500px;
+	height: 500px;
+	padding-right: 30px;
+	background: #fbd4f7;	
+}
+@keyframes climbout{
+	0%{opacity: 0;
+		}
+	100%{opacity: 1;}
+}
+.infotext>div:not(:first-child):target{	
+	animation-name: climbout;			
+	opacity: 1;		
+}
+.infotext .workexamp{	
+	display: inline-flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	height: 20%;
+	width: 100%;	
+}
+
+.infotext .workexamp img{
+	background-color: white;
+	width: 20%;
+	height: 100%;
+}
+
+h2{
+	text-align: center;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;	
+}
+/*стили для прайса*/
+.price {
+    margin-left: 0;
+    list-style: none;
+    counter-reset: li;  
+}
+.price li {
+	display: flex;
+	justify-content: space-between;
+    padding: 5px 0;
+    position: relative;
+    left: 30px;
+    margin-bottom: 5px;
+    padding-left: 20px;   
+}
+.price li:before {
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    width: 35px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    background: #f560e5;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    counter-increment: li;
+    content: counter(li);
+}
+.price li span:nth-child(odd) {
+    padding-right: 6px;     
+}
+.price li span:nth-child(even) {
+    float: right; 
+    padding-left: 6px;    
+}
+.price span {
+    position: relative;
+    bottom: -7px;
+}
+.contacts{
+	display: inline-flex;
+	justify-content: space-between;	
+}
+.officehours li {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 30px; 
+	width: 400px;	
+}
+.officehours p{
+	margin: 30px 0  0 30px ;
+}
+.footer{
+	width: 100%;
+	height: 100px;
+	border-radius: 50px;
+	border: 2px solid black;
+	background: #fbd4f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 50px;
+	color: black;
+	text-decoration: none;
+}
+.footer div p{
+	margin-left: 50px;
+}
+
+
+
+
+
+
+
